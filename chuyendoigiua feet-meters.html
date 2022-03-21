@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id ="txt" ; placeholder="chọn số ở đây">
+<select id = "chon">
+    <option value="f">Foot to metter</option>
+    <option value="m">Meter to foot</option>
+</select>
+<button onclick = "change()">chuyển</button>
+<h1 id ="rs"></h1>
+<script>
+    let gido = document.getElementById('txt');
+    let ch = document.getElementById('chon');
+    let rs = document.getElementById('rs')
+    function change () {
+        let luachon =ch.value;
+        let so = gido.value;
+        if (luachon == "f"){
+            rs.innerHTML = fooToMeter(so);
+        } else {
+            rs.innerHTML = meterToFoot(so);
+        }
+    }
+    function  fooToMeter(foot){
+        let meter = 0.305 * foot;
+        return meter;
+    }
+    function meterToFoot(meter){
+        let foot = 3.279 * meter;
+        return foot
+    }
+</script>
+
+</body>
+</html>

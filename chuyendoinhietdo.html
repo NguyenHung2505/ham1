@@ -1,0 +1,83 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<frorm>-->
+<!--    <p>-->
+<!--        <label> do f </label>-->
+<!--        <input type="number" placeholder="cai gi day"-->
+<!--               oninput="aaa(this.value)"-->
+<!--               onchange="aaa(this.value)">-->
+<!--    </p>-->
+<!--    <p>nhietdo: <span id ="ccccc"></span></p>-->
+
+<!--</frorm>-->
+
+<!--<script>-->
+<!--    function aaa(valNum){-->
+<!--        valNum = parseFloat(valNum);-->
+<!--        document.getElementById("ccccc").innerHTML= (valNum-32) / 1.8;-->
+<!--    }-->
+<!--</script>-->
+
+<!--</body>-->
+<!--</html>-->
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>bộ chuyển đổi </h1>-->
+<!--<h3>công nghệ VIỆT NAM:</h3>-->
+<!--<p>Fahrenheit:-->
+<!--    <input type="number" id="doF">-->
+<!--    <button onclick="chuyenDoi()">ĐỔI</button></p>-->
+<!--<br>-->
+<!--<p id="doC">Celcius:</p>-->
+
+<!--<script>-->
+<!--    function chuyenDoi(a) {-->
+<!--        a = document.getElementById("doF").value;-->
+<!--        let b = (a - 32) / 1.8;-->
+<!--        document.getElementById("doC").innerHTML = "Celcius: " + b-->
+<!--    }-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Fahrenheit:
+    <input type="number" placeholder="nhiệt độ muốn đổi"
+           oninput="aaa(this.value)"
+           onchange="aaa(this.value)">
+</p>
+<p id = a>Celcius:</p>
+<script>
+    function aaa(hienthi){
+        hienthi = parseFloat(hienthi);
+        document.getElementById("a").innerHTML= "Celcius : " + (hienthi-32) / 1.8;
+    }
+
+</script>
+
+</body>
+</html>
+
+
+
+
